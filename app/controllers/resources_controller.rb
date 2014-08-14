@@ -1,6 +1,6 @@
 class ResourcesController < ApplicationController
 
 	def index
-		@test = 'hi we are testing this route'
+		@resources = Resources.all
 	end
 end
