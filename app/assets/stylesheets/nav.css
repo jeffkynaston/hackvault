@@ -1,0 +1,11 @@
+.nav-main {
+	background-color: rgb(200,212,240) !important;
+	margin: auto;
+	font-size: 1.2em;
+	line-height: 60px;
+}
+
+.pure-menu-heading {
+	font-weight: 400;
+	font-size: 1.1em !important;
+}

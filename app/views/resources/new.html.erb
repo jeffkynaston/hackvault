@@ -1,12 +1,12 @@
-<%= form_for @resource do |f| %>
-  <%= f.label :title %>:
+<%= form_for @resource, html: {class: "pure-form-stacked"} do |f| %>
+  <%= f.label "title" %>:
   <%= f.text_field :title %><br />
 
   <%= f.label :description %>:
   <%= f.text_field :description %><br />
 
 	<%= f.label :link %>:
-  <%= f.text_field :link %><br />
+  <%= f.url_field :link %><br />
 
-  <%= f.submit %>
+  <%= f.submit "Create Resource", :class => 'pure-button pure-button-primary' %>
 <% end %>
