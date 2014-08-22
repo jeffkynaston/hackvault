@@ -19,10 +19,10 @@
     <ul>
         <li><%= link_to("Categories", root_path) %></li>
         <li><%= link_to("Issues", root_path) %></li>
-        <li><%= link_to("Resources", root_path) %></li>
+        <li><%= link_to("Resources", resources_path) %></li>
         <li><%= link_to("User", root_path) %></li>
         <% if current_uri =~ /resource/ %>
-        	<li><%= link_to("New", new_current_resource, {class: 'jeff'}) %></li>
+        	<li><%= link_to("New", new_current_resource, {class: 'bold'}) %></li>
         <% end %>
     </ul>
 </div>

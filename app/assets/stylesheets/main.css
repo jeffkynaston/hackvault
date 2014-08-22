@@ -15,3 +15,12 @@ html, button, input, select, textarea,
 .container {
 	height: 600px;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.bold {
+	font-weight: 400;
+}

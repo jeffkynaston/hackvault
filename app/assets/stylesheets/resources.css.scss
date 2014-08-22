@@ -9,8 +9,15 @@ h1 {
 .thumb {
 	/*width: 29.3%;*/
 	padding: 0% 2% 0% 5%;
-	margin: 0% 3%;
+	margin: 0% 3% 5% 3%;
 	/*float: left;*/
-	background: #808080;
+	background: #959595;
+	overflow: hidden;
 }
 
+.thumb:hover {
+	background: #aabbbb;
+}
+.thumb a {
+	text-decoration: none;
+}
