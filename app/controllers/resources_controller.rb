@@ -2,6 +2,7 @@ class ResourcesController < ApplicationController
 
 	def index
 		@resources = Resource.all
+		@current_uri = request.env['PATH_INFO']
 	end
 
 	def new
