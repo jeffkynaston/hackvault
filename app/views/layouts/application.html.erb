@@ -20,9 +20,14 @@
         <li><%= link_to("Categories", root_path) %></li>
         <li><%= link_to("Issues", root_path) %></li>
         <li><%= link_to("Resources", resources_path) %></li>
-        <li><%= link_to("User", root_path) %></li>
+        <% if user_signed_in? %>
+					<li><%= link_to(current_user.email, edit_user_registration_path) %></li>
+        	<li><%= link_to("Logout", destroy_user_session_path, method: "delete") %></li>
+				<% else %>
+        	<li><%= link_to("Login", new_user_session_path) %></li>
+        <% end %>
         <% if current_uri =~ /resource/ %>
-        	<li><%= link_to("New", new_current_resource, {class: 'bold'}) %></li>
+        	<li><%= link_to("New", new_current_resource, {class: 'bold new'}) %></li>
         <% end %>
     </ul>
 </div>
@@ -34,7 +39,7 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 <div class="container">
-<%= yield %>
+	<%= yield %>
 </div>
 
 </body>
