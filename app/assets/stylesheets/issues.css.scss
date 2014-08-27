@@ -1,3 +1,24 @@
 // Place all the styles related to the issues controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	text-align: center;
+}
+
+.thumb {
+	/*width: 29.3%;*/
+	padding: 0% 2% 0% 5%;
+	margin: 0% 3% 5% 3%;
+	/*float: left;*/
+	background: #959595;
+	overflow: hidden;
+}
+
+.thumb:hover {
+	background: #aabbbb;
+}
+.thumb a {
+	text-decoration: none;
+}
+

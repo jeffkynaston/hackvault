@@ -16,6 +16,6 @@ class ResourcesController < ApplicationController
 
 	def create
 		Resource.create(params.require(:resource).permit(:title, :description, :link))
-		redirect_to root_path
+		redirect_to resoures_path
 	end
 end

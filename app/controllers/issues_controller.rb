@@ -16,7 +16,7 @@ class IssuesController < ApplicationController
 
 	def create
 		Issue.create(params.require(:issue).permit(:title, :description, :link))
-		redirect_to root_path
+		redirect_to issues_path
 	end
 
 end

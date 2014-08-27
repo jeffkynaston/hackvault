@@ -1,0 +1,16 @@
+
+<h1> Browse Issues </h1>
+<div class="pure-g">
+    
+	 
+	<% @issues.each_with_index do |issue, index| %>
+		<div class="pure-u-1-3">
+		<a href="/issues/<%= issue.id %>">
+			<div class="thumb">
+				<h2><%= issue.title %></h2>
+				<p><%= issue.description %></p>
+			</div>
+		</a>
+		</div>
+	<% end %>
+</div>
