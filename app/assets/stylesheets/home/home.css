@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
-	padding-top: 1em;
+	padding-top: .5em;
 }
 
-.category-link {
+.main-link {
 	width: 29%;
 	min-width: 250px;
-	background: #eee;
+	background: rgb(200,212,240);
 	font-size: 2em;
 	margin: .5em;
 	float: left;
@@ -17,12 +17,15 @@ h1 {
 	line-height: 4em;
 }
 
-.category-link:hover {
+.main-link:hover {
 	background: #abc;
 	cursor: pointer;
+	box-shadow: 0 0 0 5px #000 inset;
+	-webkit-box-shadow: 0 0 0 5px #000 inset;
+	-moz-box-shadow: 0 0 0 5px #000 inset;
 }
 
 .front {
 	margin: auto;
-	max-width: 80%;
+	max-width: 90%;
 }

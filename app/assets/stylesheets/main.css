@@ -1,6 +1,9 @@
+html {
+	background-color: #fff;
+}
+
 body{
 	max-width: 1200px;
-	background-color: rgba(150,180,200,0.2);
 	margin: auto;
 }
 
@@ -14,8 +17,10 @@ html, button, input, select, textarea,
 
 .container {
 	height: 600px;
-	background-color: #fff;
+	background-color: rgba(150,180,200,0.2);
 	padding: 0 2em;
+	margin-top: 2em;
+	overflow: auto;
 }
 
 a {

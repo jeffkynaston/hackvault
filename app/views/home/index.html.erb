@@ -1,12 +1,12 @@
 <h1> Welcome to Hack Vault </h1>
 <div class="front">
-	<div class="category-link">
-		<%= link_to("Categories", categories_path) %>
-	</div>
-	<div class="category-link">
-		<%= link_to("Issues", issues_path) %>
-	</div>
-	<div class="category-link">
-		<%= link_to("Resources", resources_path) %>
-	</div>
+	<%= link_to(categories_path) do %>
+	<div class="main-link">Categories</div>
+	<% end %>
+	<%= link_to(issues_path) do %>
+	<div class="main-link">Issues</div>
+	<% end %>
+	<%= link_to(resources_path) do %>
+	<div class="main-link">Resources</div>
+	<% end %>
 </div>
