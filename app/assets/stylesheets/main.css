@@ -15,17 +15,13 @@ html, button, input, select, textarea,
     font-weight: 300
 }
 
-.container {
-	height: 600px;
-	background-color: rgba(150,180,200,0.2);
-	padding: 0 2em;
-	margin-top: 2em;
-	overflow: auto;
-}
-
 a {
 	text-decoration: none;
 	color: black;
+}
+
+h1 {
+	text-align: center;
 }
 
 .bold {
@@ -58,4 +54,11 @@ input[type=checkbox] {
 	max-width: 80%;
 	margin: auto;
 	margin-top: 20px;
+}
+.container {
+	height: 600px;
+	background-color: rgba(150,180,200,0.2);
+	padding: 0 2em;
+	margin-top: 2em;
+	overflow: auto;
 }

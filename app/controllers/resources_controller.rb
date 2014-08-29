@@ -10,8 +10,8 @@ class ResourcesController < ApplicationController
 	end
 
 	def show
-		p params[:id]
 		@resource = Resource.find(params[:id])
+		if @resource.category == nil
 	end
 
 	def create

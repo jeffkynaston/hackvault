@@ -18,4 +18,9 @@ module ApplicationHelper
 	def current_uri
 		current_uri = request.env['PATH_INFO']
 	end
+
+	def current_class?(test_path)
+	  return 'current' if request.path == test_path
+	  ''
+	end
 end
