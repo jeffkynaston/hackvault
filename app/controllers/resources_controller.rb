@@ -11,11 +11,10 @@ class ResourcesController < ApplicationController
 
 	def show
 		@resource = Resource.find(params[:id])
-		if @resource.category == nil
 	end
 
 	def create
 		Resource.create(params.require(:resource).permit(:title, :description, :link))
-		redirect_to resoures_path
+		redirect_to resources_path
 	end
 end

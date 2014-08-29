@@ -2,8 +2,16 @@
 <div class="resource-body">
 	<div class="resource-nav">
 		<ul>	
-			<li><%= link_to(@resource.category.title, category_path) %></li>
-			<li><%= link_to(@resource.issue.title, issue_path) %></li>
+			<% @resource.categories.each do |category| %>
+				<%= link_to(category_path(category)) do %>
+					<li><%= category.title %></li>
+				<% end %>
+			<% end %>
+			<% @resource.issues.each do |issue| %>
+				<%= link_to(issues_path(issue)) do %>
+					<li><%= issue.title %></li>
+				<% end %>
+			<% end %>
 		</ul>
 	</div>
 	<p><%= @resource.description %></p>

@@ -1,5 +1,5 @@
 class Resource < ActiveRecord::Base
 	belongs_to :user
-	belongs_to :issue
-	belongs_to :category
+	has_and_belongs_to_many :issues
+	has_and_belongs_to_many :categories
 end
