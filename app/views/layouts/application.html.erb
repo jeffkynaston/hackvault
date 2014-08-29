@@ -17,7 +17,7 @@
 <div class="pure-menu pure-menu-open pure-menu-horizontal nav-main">
     <%= link_to("Hack Vault", root_path, {class: 'pure-menu-heading'}) %>
     <ul>
-        <li><%= link_to("Categories", root_path) %></li>
+        <li><%= link_to("Categories", categories_path) %></li>
         <li><%= link_to("Issues", issues_path) %></li>
         <li><%= link_to("Resources", resources_path) %></li>
         <% if user_signed_in? %>
@@ -26,7 +26,7 @@
 				<% else %>
         	<li><%= link_to("Login", new_user_session_path) %></li>
         <% end %>
-        <% if current_uri =~ /resource/ || current_uri =~ /issue/ %>
+        <% if current_uri =~ /resource/ || current_uri =~ /issue/ || current_uri =~ /categorie/ %>
         	<li><%= link_to("New", new_current_resource, {class: 'bold new'}) %></li>
         <% end %>
     </ul>
@@ -38,7 +38,7 @@
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-<div class="container">
+<div class="container"> 
 	<%= yield %>
 </div>
 

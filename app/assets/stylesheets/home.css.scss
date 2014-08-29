@@ -1,3 +1,28 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+	padding-top: 1em;
+}
+
+.category-link {
+	width: 29%;
+	min-width: 250px;
+	background: #eee;
+	font-size: 2em;
+	margin: .5em;
+	float: left;
+	text-align: center;
+	line-height: 4em;
+}
+
+.category-link:hover {
+	background: #abc;
+	cursor: pointer;
+}
+
+.front {
+	margin: auto;
+	max-width: 80%;
+}

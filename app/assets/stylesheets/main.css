@@ -14,6 +14,8 @@ html, button, input, select, textarea,
 
 .container {
 	height: 600px;
+	background-color: #fff;
+	padding: 0 2em;
 }
 
 a {

@@ -6,8 +6,5 @@ class CreateCategories < ActiveRecord::Migration
 
       t.timestamps
     end
-
-      t.timestamps
-    end
   end
 end

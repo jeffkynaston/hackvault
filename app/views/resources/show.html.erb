@@ -1,3 +1,14 @@
 <h1><%= @resource.title %></h1>
-<p><%= @resource.description %></p>
-<p><%= @resource.link %></p>
+<div class="resource-body">
+	<div class="resource-nav">
+		<ul>	
+			<li><%= link_to_if(!@resource.category.nil?, @resource.category.title, category_path) %></li>
+			<li><%= link_to_if(!@resource.category.nil?, @resource.issue.title, issue_path) %></li>
+		</ul>
+	</div>
+	<p><%= @resource.description %></p>
+	<p><%= @resource.link %></p>
+	<p>user: <%= @resource.user %></p>
+	<p>created on: <%= @resource.created_at %></p>
+</div>
+

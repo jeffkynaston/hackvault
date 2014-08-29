@@ -11,7 +11,7 @@ h1 {
 	padding: 0% 2% 0% 5%;
 	margin: 0% 3% 5% 3%;
 	/*float: left;*/
-	background: #959595;
+	background: #ddd;
 	overflow: hidden;
 }
 
@@ -22,3 +22,20 @@ h1 {
 	text-decoration: none;
 }
 
+.resource-body {
+	width: 80%;
+	margin: auto;
+}
+
+.resource-nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+.resource-nav li {
+	list-style: none;
+	display: inline-block;
+	background: #aaddee;
+	padding: .5em;
+	margin-right: .5em;
+}
