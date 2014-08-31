@@ -2,8 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-	text-align: center;
+h1, h2, h3 {
+	text-align: center !important;
 }
 
 .thumb {
@@ -18,4 +18,19 @@ h1 {
 }
 .thumb a {
 	text-decoration: none;
+}
+
+.category-issue-list,
+.category-resource-list {
+	float: left;
+	width: 47%;
+	margin: 1%;
+}
+
+.category-resource,
+.category-issue {
+	background: #63A599;
+	width: 100%;
+	padding: .5%;
+	margin: 1%;
 }

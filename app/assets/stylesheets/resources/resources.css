@@ -23,13 +23,16 @@ h1 {
 }
 
 .resource-body {
-	width: 80%;
-	margin: auto;
+	width: 100%;
+	margin: 0 10%;
 }
 
+.resource-nav {
+	margin: 1em auto;
+}
 .resource-nav ul {
 	padding: 0;
-	margin: 0;
+	margin: .5em auto;
 }
 
 .resource-nav li {
@@ -38,4 +41,10 @@ h1 {
 	background: #aaddee;
 	padding: .5em;
 	margin-right: .5em;
+	margin-bottom: .4em;
+}
+
+.resource-nav li:hover {
+	color: #F4F1E3;
+	background-color: #1F2F3F;
 }

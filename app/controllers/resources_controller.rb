@@ -14,7 +14,9 @@ class ResourcesController < ApplicationController
 	end
 
 	def create
-		Resource.create(params.require(:resource).permit(:title, :description, :link))
+		resource = Resource.new(params.require(:resource).permit(:title, :description, :link))
+		resource.user = current_user if user_signed_in?
+		resource.save
 		redirect_to resources_path
 	end
 end

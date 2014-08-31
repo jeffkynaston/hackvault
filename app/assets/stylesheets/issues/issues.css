@@ -22,3 +22,10 @@ h1 {
 	text-decoration: none;
 }
 
+.issue-resource {
+	background: #63A599;
+	width: 47%;
+	float: left;
+	padding: .5%;
+	margin: 1%;
+}

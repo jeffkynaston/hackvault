@@ -1,17 +1,33 @@
 .nav-main {
-	background-color: rgb(200,212,240) !important;
+	background-color: #1F2F3F !important;
 	margin: auto;
 	font-size: 1.2em;
 	line-height: 60px;
+	color: #F4F1E3;
+	margin-top: .5em;
+}
+
+.nav-main a {
+	color: #F4F1E3;
+}
+
+.nav-main li a:hover {
+	color: #1F2F3F !important;
+}
+
+.white {
+	color: #F4F1E3;
+	display: inline;
 }
 
 .pure-menu-heading {
 	font-weight: 400;
+	color: #F4F1E3 !important;
 	font-size: 1.1em !important;
 }
 
 .new {
-	color: blue !important;
+	color: #aaddee !important;
 	position: relative;
 }
 

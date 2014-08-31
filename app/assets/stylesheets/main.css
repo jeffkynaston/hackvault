@@ -1,16 +1,16 @@
-html {
-	background-color: #fff;
+html {	background-color: #C7C5B5;
+
 }
 
 body{
 	max-width: 1200px;
 	margin: auto;
+	color: #1F2F3F;
 }
 
 html, button, input, select, textarea,
 .nav-main,
 .pure-g [class *= "pure-u"] {
-    /* Set your content font stack here: */
     font-family: 'Lato', sans-serif;
     font-weight: 300
 }
@@ -47,6 +47,7 @@ input[type=checkbox] {
 
 .center-form textarea {
 	min-height: 100px;
+	padding: 10px 100px;
 }
 
 .center-form {
@@ -57,7 +58,7 @@ input[type=checkbox] {
 }
 .container {
 	height: 600px;
-	background-color: rgba(150,180,200,0.2);
+	background-color: #F4F1E3;
 	padding: 0 2em;
 	margin-top: 2em;
 	overflow: auto;

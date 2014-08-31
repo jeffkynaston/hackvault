@@ -3,26 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1 {
-	padding-top: .5em;
+	margin-top: 1em;
 }
 
 .main-link {
 	width: 29%;
 	min-width: 250px;
-	background: rgb(200,212,240);
+	background: #aaddee;
 	font-size: 2em;
 	margin: .5em;
 	float: left;
 	text-align: center;
-	line-height: 4em;
+	line-height: 6em;
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
 }
 
 .main-link:hover {
-	background: #abc;
+	color: #F4F1E3;
+	background-color: #1F2F3F;
 	cursor: pointer;
-	box-shadow: 0 0 0 5px #000 inset;
+/*	box-shadow: 0 0 0 5px #000 inset;
 	-webkit-box-shadow: 0 0 0 5px #000 inset;
-	-moz-box-shadow: 0 0 0 5px #000 inset;
+	-moz-box-shadow: 0 0 0 5px #000 inset;*/
 }
 
 .front {

@@ -8,15 +8,17 @@
 				<% end %>
 			<% end %>
 			<% @resource.issues.each do |issue| %>
-				<%= link_to(issues_path(issue)) do %>
+				<%= link_to(issue_path(issue)) do %>
 					<li><%= issue.title %></li>
 				<% end %>
 			<% end %>
 		</ul>
 	</div>
+	<div class="bold">Description:</div>
 	<p><%= @resource.description %></p>
+	<div class="bold">Link:</div>
 	<p><%= @resource.link %></p>
-	<p>user: <%= @resource.user %></p>
-	<p>created on: <%= @resource.created_at %></p>
+	<br/>
+	<p>user: <%= @resource.user || "Anonymous" %> | 	created on: <%= @resource.created_at %></p>
 </div>
 
