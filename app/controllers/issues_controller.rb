@@ -11,7 +11,7 @@ class IssuesController < ApplicationController
 
 	def show
 		@issue = Issue.find(params[:id])
-		@issue.title = "Issue Title" if @issue.title = ""
+		@issue.title = "Issue Title" if @issue.title == ""
 	end
 
 	def create
