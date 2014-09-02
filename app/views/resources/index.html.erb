@@ -8,8 +8,10 @@
 		<a href="/resources/<%= resource.id %>">
 			<div class="thumb">
 				<h2><%= resource.title %></h2>
-				<p><%= resource.description %></p>
-				<p><div class="bold"> posted by:</div> <%= resource.user_name %></p>
+				<p>
+					<div class="bold"> posted by:</div> <%= resource.user_name %>
+					<div class="date"><%= resource.created_at.time.to_formatted_s(:long) %></div>
+				</p>
 			</div>
 		</a>
 		</div>
