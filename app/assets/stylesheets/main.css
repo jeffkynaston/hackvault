@@ -76,28 +76,6 @@ option {
 	padding: 6px;
 }*/
 
-.check-multiple {
-	
-	width: 46%;
-	float: left;
-	margin: 2% 1.5%;
-}
-
-.check-multiple-options {
-	overflow: auto;
-	width: 100%;
-	background: #fff;
-	border: 2px solid #aaa;
-	height: 100px;
-}
-
-.check-multiple label {
-	display: inline;
-}
-
-.check-multiple label:after { 
-	content:"\A"; white-space:pre; 
-}
 
 /*.check-multiple input {
 	display: block;

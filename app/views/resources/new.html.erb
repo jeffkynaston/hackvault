@@ -11,7 +11,7 @@
 	  <%= f.url_field :link %>
 	
 	  <div class="check-multiple">
-			<%= f.label "categories(s)" %>
+			<%= f.label "categories" %>
 		  <div class="check-multiple-options">
 			  <%= f.collection_check_boxes :category_ids,
 		                             Category.all,
@@ -21,7 +21,7 @@
     </div>
 
 	  <div class="check-multiple">
-			<%= f.label "issue(s)" %>
+			<%= f.label "issues" %>
 			<div class="check-multiple-options">
 	  		<%= f.collection_check_boxes :issue_ids,
                              Issue.all,

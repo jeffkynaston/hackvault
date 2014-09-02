@@ -7,6 +7,16 @@
 	  <%= f.label :description %>
 	  <%= f.text_area :description %><br />
 
+	  <div class="check-multiple-categories">
+	  <%= f.label "categories" %>
+	  	<div class="check-multiple-categories-options">
+	  		<%= f.collection_check_boxes :category_ids,
+	  		Category.all,
+	  		:id,
+	  		:title %>
+	  	</div>
+	  </div>
+
 	  <%= f.submit "Create Issue", :class => 'pure-button pure-button-primary' %>
 	<% end %>
 </div>

@@ -49,3 +49,26 @@ h1 {
 	color: #F4F1E3;
 	background-color: #1F2F3F;
 }
+
+.check-multiple {
+	
+	width: 46%;
+	float: left;
+	margin: 2% 1.5%;
+}
+
+.check-multiple-options {
+	overflow: auto;
+	width: 100%;
+	background: #fff;
+	border: 2px solid #aaa;
+	height: 100px;
+}
+
+.check-multiple label {
+	display: inline;
+}
+
+.check-multiple label:after { 
+	content:"\A"; white-space:pre; 
+}

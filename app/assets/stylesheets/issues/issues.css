@@ -83,3 +83,25 @@ h1 {
 	background: #1F2F3F;
 	color: #F4F1E3;
 }
+
+.check-multiple-categories {
+	
+	width: 46%;
+	margin: 2% 1.5%;
+}
+
+.check-multiple-categories-options {
+	overflow: auto;
+	width: 100%;
+	background: #fff;
+	border: 2px solid #aaa;
+	height: 100px;
+}
+
+.check-multiple-categories label {
+	display: inline;
+}
+
+.check-multiple-categories label:after { 
+	content:"\A"; white-space:pre; 
+}

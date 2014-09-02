@@ -10,8 +10,9 @@ class CategoriesController < ApplicationController
 	end
 
 	def show
-		p params[:id]
 		@category = Category.find(params[:id])
+		@category.title = "Category Title" if @category.title = ""
+
 	end
 
 	def create
