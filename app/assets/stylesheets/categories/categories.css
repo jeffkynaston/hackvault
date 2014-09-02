@@ -11,6 +11,9 @@ h1, h2, h3 {
 	margin: 0% 3% 5% 3%;
 	background: #ddd;
 	overflow: hidden;
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
 }
 
 .thumb:hover {
@@ -20,6 +23,12 @@ h1, h2, h3 {
 	text-decoration: none;
 }
 
+.category-description {
+	width: 80%;
+	margin: auto;
+	font-size: 1.3em;
+}
+
 .category-issue-list,
 .category-resource-list {
 	float: left;
@@ -27,10 +36,24 @@ h1, h2, h3 {
 	margin: 1%;
 }
 
+.category-issue-list h2,
+.category-resource-list h2 {
+ text-align: center;
+}
+
 .category-resource,
 .category-issue {
 	background: #63A599;
-	width: 100%;
-	padding: .5%;
-	margin: 1%;
+	width: 90%;
+	padding: 4%;
+	margin: 3%;
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
+}
+
+.category-resource:hover,
+.category-issue:hover {
+	background: #1F2F3F;
+	color: #F4F1E3;
 }
