@@ -8,7 +8,10 @@
 		<a href="/issues/<%= issue.id %>">
 			<div class="thumb">
 				<h2><%= issue.title %></h2>
-				<p><%= issue.description %></p>
+				<p>
+					<div class="bold"> posted by:</div> <%= issue.user_name %>
+					<div class="date"><%= issue.created_at.time.to_formatted_s(:long) %></div>
+				</p>
 			</div>
 		</a>
 		</div>
