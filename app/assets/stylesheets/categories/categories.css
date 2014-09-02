@@ -9,7 +9,7 @@ h1, h2, h3 {
 .thumb {
 	padding: 0% 2% 0% 5%;
 	margin: 0% 3% 5% 3%;
-	background: #ddd;
+	background: rgba(31,47,63,.35);
 	overflow: hidden;
 	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
@@ -43,7 +43,7 @@ h1, h2, h3 {
 
 .category-resource,
 .category-issue {
-	background: #63A599;
+	background: rgba(99,165,153,.6);
 	width: 90%;
 	padding: 4%;
 	margin: 3%;

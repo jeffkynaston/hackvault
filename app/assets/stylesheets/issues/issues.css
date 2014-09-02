@@ -11,7 +11,7 @@ h1 {
 	padding: 0% 2% 0% 5%;
 	margin: 0% 3% 5% 3%;
 	/*float: left;*/
-	background: #ddd;
+	background: rgba(31,47,63,.35);
 	overflow: hidden;
 }
 
@@ -70,8 +70,8 @@ h1 {
 }
 
 .issue-resource {
-	background: #63A599;
-	width: 100%;
+	background: rgba(99,165,153,.6);
+	width: 96%;
 	padding: 2%;
 	margin: 1.5% auto;
 	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.75);
@@ -87,7 +87,7 @@ h1 {
 .check-multiple-categories {
 	
 	width: 46%;
-	margin: 2% 1.5%;
+	margin: 2% 1.5% 2% 0%;
 }
 
 .check-multiple-categories-options {
