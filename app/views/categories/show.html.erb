@@ -8,7 +8,7 @@
 		<%= link_to(issue_path(issue)) do %>
 			<div class="category-issue">
 				<h3><%= issue.title %></h3>
-				<p><%= issue.description %></p>
+				<p><%= simple_format(issue.description) %></p>
 			</div>
 		<% end %>
 	<% end %>
@@ -20,7 +20,7 @@
 		<%= link_to(resource_path(resource)) do %>
 			<div class="category-resource">
 				<h3><%= resource.title %></h3>
-				<p><%= resource.description %></p>
+				<p><%= simple_format(resource.description) %></p>
 			</div>
 		<% end %>
 	<% end %>
