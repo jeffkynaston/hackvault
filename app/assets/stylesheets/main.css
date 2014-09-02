@@ -26,6 +26,7 @@ h1 {
 
 .bold {
 	font-weight: 400;
+	display: inline;
 }
 select,
 textarea,

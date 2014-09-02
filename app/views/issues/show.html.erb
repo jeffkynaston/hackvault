@@ -1,3 +1,25 @@
 <h1><%= @issue.title %></h1>
-<p><%= @issue.description %></p>
+<div class="issue-nav">
+		<ul>	
+			<% @issue.categories.each do |category| %>
+				<%= link_to(category_path(category)) do %>
+					<li><%= category.title %></li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
+	<div class="issue-description">
+		<p><%= @issue.description %></p>
+	</div>
 
+<div class="issue-resource-list">
+	<h2>Resources</h2>
+	<% @issue.resources.each do |resource| %>
+		<%= link_to(resource_path(resource)) do %>
+			<div class="issue-resource">
+				<h3><%= resource.title %></h3>
+				<p><%= resource.description %></p>
+			</div>
+		<% end %>
+	<% end %>
+</div>

@@ -29,3 +29,57 @@ h1 {
 	padding: .5%;
 	margin: 1%;
 }
+
+.issue-nav {
+	margin: 1em auto;
+	width: 80%;
+}
+
+.issue-nav ul {
+	padding: 0;
+	margin: .5em auto;
+}
+
+.issue-nav li {
+	list-style: none;
+	display: inline-block;
+	background: #aaddee;
+	padding: .5em;
+	margin-right: .5em;
+	margin-bottom: .4em;
+}
+
+.issue-nav li:hover {
+	color: #F4F1E3;
+	background-color: #1F2F3F;
+}
+
+.issue-description {
+	width: 80%;
+	margin: auto;
+	font-size: 1.3em;
+}
+
+.issue-resource-list {
+	margin: 1% auto;
+	width: 80%;
+}
+
+.issue-resource-list h2 {
+ text-align: center;
+}
+
+.issue-resource {
+	background: #63A599;
+	width: 100%;
+	padding: 2%;
+	margin: 1.5% auto;
+	-webkit-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 5px 1px rgba(0,0,0,0.4);
+}
+
+.issue-resource:hover {
+	background: #1F2F3F;
+	color: #F4F1E3;
+}

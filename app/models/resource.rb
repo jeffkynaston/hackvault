@@ -13,4 +13,13 @@ class Resource < ActiveRecord::Base
 			self.issues << Issue.find(num) if num != ""
 		end
 	end
+
+	def user_name
+		if self.user
+			self.user.email
+		else
+			"Anonymous"
+		end
+	end
+	
 end

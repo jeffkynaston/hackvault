@@ -13,6 +13,7 @@ class ResourcesController < ApplicationController
 
 	def show
 		@resource = Resource.find(params[:id])
+		@resource.title = "Resource Title" if @resource.title == ""
 	end
 
 	def create

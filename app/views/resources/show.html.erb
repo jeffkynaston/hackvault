@@ -17,8 +17,8 @@
 	<div class="bold">Description:</div>
 	<p><%= @resource.description %></p>
 	<div class="bold">Link:</div>
-	<p><%= @resource.link %></p>
+	<p><%= link_to(@resource.link, @resource.link) %></p>
 	<br/>
-	<p>user: <%= @resource.user || "Anonymous" %> | 	created on: <%= @resource.created_at %></p>
+	<p><div class="bold">user:</div> <%= @resource.user_name %> | <div class="bold">created on:</div> <%= @resource.created_at.to_formatted_s(:long) %></p>
 </div>
 
