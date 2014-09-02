@@ -8,7 +8,10 @@
 		<%= link_to(issue_path(issue)) do %>
 			<div class="category-issue">
 				<h3><%= issue.title %></h3>
-				<p><%= simple_format(issue.description) %></p>
+				<p>
+					<div class="bold"> posted by:</div> <%= issue.user_name %>
+					<div class="date"><%= issue.created_at.time.to_formatted_s(:long) %></div>
+				</p>
 			</div>
 		<% end %>
 	<% end %>
@@ -20,7 +23,10 @@
 		<%= link_to(resource_path(resource)) do %>
 			<div class="category-resource">
 				<h3><%= resource.title %></h3>
-				<p><%= simple_format(resource.description) %></p>
+				<p>
+					<div class="bold"> posted by:</div> <%= resource.user_name %>
+					<div class="date"><%= resource.created_at.time.to_formatted_s(:long) %></div>
+				</p>
 			</div>
 		<% end %>
 	<% end %>

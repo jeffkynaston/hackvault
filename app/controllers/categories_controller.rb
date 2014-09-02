@@ -11,7 +11,7 @@ class CategoriesController < ApplicationController
 
 	def show
 		@category = Category.find(params[:id])
-		@category.title = "Category Title" if @category.title = ""
+		@category.title = "Category Title" if @category.title == ""
 
 	end
 
