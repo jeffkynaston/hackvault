@@ -15,10 +15,6 @@ module ApplicationHelper
 		return "/" + current_resource + "/new"	
 	end
 
-	# def new_current_path
-	# 	"/#{current_resource}"
-	# end
-
 	def current_uri
 		current_uri = request.env['PATH_INFO']
 	end
@@ -26,11 +22,6 @@ module ApplicationHelper
 	def current_class?(test_path)
 	  return 'current' if request.path == test_path
 	  return 'current' if "/#{current_resource}" == test_path
-	  p 'this is request.path'
-	  p request.path
-	  p test_path
-	  p 'this is current resource'
-	  p current_resource
 	  ''
 	end
 end
