@@ -18,9 +18,9 @@ class ResourcesController < ApplicationController
 
 	def create
 		p params
-		resource = Resource.new(params.require(:resource).permit(:title, :description, :link, :issue_ids, :category_ids))
-		resource.assign_categories(params["resource"]["category_ids"])
-		resource.assign_issues(params["resource"]["issue_ids"])
+		resource = Resource.new(params.require(:resource).permit(:title, :description, :link, issue_ids: [], category_ids: []))
+		# resource.assign_categories(params["resource"]["category_ids"])
+		# resource.assign_issues(params["resource"]["issue_ids"])
 		resource.user = current_user if user_signed_in?
 		resource.save
 		redirect_to resources_path

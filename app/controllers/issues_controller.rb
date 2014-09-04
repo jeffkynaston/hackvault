@@ -15,8 +15,8 @@ class IssuesController < ApplicationController
 	end
 
 	def create
-		issue = Issue.new(params.require(:issue).permit(:title, :description, :link, :category_ids))
-		issue.assign_categories(params["issue"]["category_ids"])
+		issue = Issue.new(params.require(:issue).permit(:title, :description, :link, category_ids: []))
+		# issue.assign_categories(params["issue"]["category_ids"])
 		issue.user = current_user if user_signed_in?
 		issue.save
 		redirect_to issues_path
