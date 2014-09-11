@@ -11,7 +11,7 @@ h1 {
 	padding: 0% 2% 0% 5%;
 	margin: 0% 3% 5% 3%;
 	/*float: left;*/
-	background: rgba(31,47,63,.35);
+	background: rgba(230,240,250,.8);
 	overflow: hidden;
 }
 
@@ -70,7 +70,7 @@ h1 {
 }
 
 .issue-resource {
-	background: rgba(99,165,153,.6);
+	background: rgba(244,241,227,.9);
 	width: 96%;
 	padding: 2%;
 	margin: 1.5% auto;
@@ -80,7 +80,7 @@ h1 {
 }
 
 .issue-resource:hover {
-	background: #1F2F3F;
+	background: rgba(18, 19, 25, 0.80);
 	color: #F4F1E3;
 }
 
@@ -96,6 +96,7 @@ h1 {
 	background: #fff;
 	border: 2px solid #aaa;
 	height: 100px;
+	color: rgba(18, 19, 25, 1);
 }
 
 .check-multiple-categories label {
@@ -104,4 +105,12 @@ h1 {
 
 .check-multiple-categories label:after { 
 	content:"\A"; white-space:pre; 
+}
+
+.issue-info {
+	color: black;
+}
+
+.issue-info:hover {
+	color: #F4F1E3;
 }

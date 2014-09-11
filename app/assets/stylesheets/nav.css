@@ -1,10 +1,20 @@
 .nav-main {
-	background-color: #1F2F3F !important;
+	max-width: 840px;
+	margin: auto;
+	background-color: rgba(18, 19, 25, 0.80) !important;
 	margin: auto;
 	font-size: 1.2em;
 	line-height: 60px;
 	color: #F4F1E3;
-	margin-top: .5em;
+	/*padding-left: 20%;
+	padding-right: 20%;*/
+	font-weight: 200;
+}
+
+.nav-holder {
+	background-color: rgba(18, 19, 25, 0.80) !important;
+	margin: auto;
+	line-height: 60px;
 }
 
 .nav-main a {
@@ -27,7 +37,7 @@
 }
 
 .new {
-	color: #aaddee !important;
+	color: #26AEDA !important;
 	position: relative;
 }
 
