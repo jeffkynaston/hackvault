@@ -1,7 +1,5 @@
 html {	
-	/*background-color: #C7C5B5;*/
-	/*background: url(bookshelf-2800x1860.jpg) no-repeat center center fixed; */
-	 background-image: url('bookshelf-2800x1860.jpg');
+	background: url('http://jeffkynaston.com/images/bookshelf-2800x1860.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
