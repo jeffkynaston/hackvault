@@ -15,7 +15,7 @@ body{
 	background: linear-gradient(to right,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0.9) 20%,rgba(255,255,255,1) 35%,rgba(255,255,255,1) 65%,rgba(255,255,255,0.9) 80%,rgba(255,255,255,0.5) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff',GradientType=1 );*/
 	background-color: rgba(18, 19, 25, 0.60) !important;	
-	color: #1F2F3F;
+	color: #F4F1E3;
 }
 
 html, body {
