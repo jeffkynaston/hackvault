@@ -1,7 +1,7 @@
 .nav-main {
 	max-width: 840px;
 	margin: auto;
-	background-color: rgba(18, 19, 25, 0.80) !important;
+	background-color: rgba(18, 19, 25, 0) !important;
 	margin: auto;
 	font-size: 1.2em;
 	line-height: 60px;
@@ -12,7 +12,7 @@
 }
 
 .nav-holder {
-	background-color: rgba(18, 19, 25, 0.80) !important;
+	background-color: rgba(18, 19, 25, 0.90) !important;
 	margin: auto;
 	line-height: 60px;
 }

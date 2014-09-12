@@ -42,9 +42,16 @@
 <% if alert %>
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-<div class="container"> 
-	<%= yield %>
+<% if current_uri == root_path %>
+<div class="home-container"> 
+  <%= yield %>
 </div>
+<% else %>
+  <div class="container"> 
+	 <%= yield %>
+</div>
+<% end %>
+<% else %>
 
 </body>
 </html>

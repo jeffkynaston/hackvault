@@ -28,6 +28,7 @@ h1 {
 	float: left;
 	padding: .5%;
 	margin: 1%;
+	color: #000;
 }
 
 .issue-nav {
@@ -43,7 +44,7 @@ h1 {
 .issue-nav li {
 	list-style: none;
 	display: inline-block;
-	background: #aaddee;
+	background: #18657E;
 	padding: .5em;
 	margin-right: .5em;
 	margin-bottom: .4em;
