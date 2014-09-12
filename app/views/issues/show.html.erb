@@ -9,7 +9,7 @@
 		</ul>
 	</div>
 	<div class="issue-description">
-		<p><%= @issue.description %></p>
+		<p><%= markdown @issue.description %></p>
 	</div>
 
 <div class="issue-resource-list">
@@ -18,7 +18,7 @@
 		<%= link_to(resource_path(resource)) do %>
 			<div class="issue-resource">
 				<h3><%= resource.title %></h3>
-				<p><%= simple_format(resource.description) %></p>
+				<p><%=  markdown resource.description %></p>
 			</div>
 		<% end %>
 	<% end %>

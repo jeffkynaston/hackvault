@@ -15,7 +15,7 @@
 		</ul>
 	</div>
 	<div class="bold">Description:</div>
-	<p><%= simple_format(@resource.description) %></p>
+	<p><%= markdown @resource.description %></p>
 	<div class="bold">Link:</div>
 	<p><%= link_to(@resource.link, @resource.link) %></p>
 	<br/>

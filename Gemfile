@@ -35,6 +35,9 @@ gem 'jbuilder', '~> 1.2'
 #Heroku fix
 gem 'rails_12factor'
 
+#markdown in post body
+gem 'redcarpet'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

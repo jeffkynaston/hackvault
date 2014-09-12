@@ -1,6 +1,6 @@
 <h1><%= @category.title %></h1>
 <div class="category-description">
-	<p><%= @category.description %></p>
+	<p><%= markdown @category.description %></p>
 </div>
 <div class="category-issue-list">
 	<h2>Issues</h2>
