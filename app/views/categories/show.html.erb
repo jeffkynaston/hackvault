@@ -1,6 +1,9 @@
 <h1><%= @category.title %></h1>
 <div class="category-description">
 	<p><%= markdown @category.description %></p>
+	<% if @category.user == current_user %>
+		<p><%= link_to("edit", edit_category_path(@category))	 %></p>
+	<% end %>
 </div>
 <div class="category-issue-list">
 	<h2>Issues</h2>

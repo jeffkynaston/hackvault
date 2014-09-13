@@ -22,4 +22,16 @@ class IssuesController < ApplicationController
 		redirect_to issues_path
 	end
 
+	def edit
+		@issue = Issue.find(params[:id])
+
+	end
+
+	def update
+		issue = Issue.update(params[:id], params.require(:issue).permit(:title, :description, :link, category_ids: []))
+		issue.user = current_user if user_signed_in?
+		issue.save
+		redirect_to issue_path(issue)
+	end
+
 end

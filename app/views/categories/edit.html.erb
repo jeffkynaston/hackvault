@@ -1,0 +1,12 @@
+<h1>Edit Category</h1>
+<div class="center-form">
+	<%= form_for @category, html: {class: "pure-form-stacked"} do |f| %>
+	  <%= f.label :title %>
+	  <%= f.text_field :title %><br />
+
+	  <%= f.label :description %>
+	  <%= f.text_area :description %><br />
+
+	  <%= f.submit "Edit Category", :class => 'pure-button pure-button-primary' %>
+	<% end %>
+</div>

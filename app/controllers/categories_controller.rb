@@ -20,7 +20,22 @@ class CategoriesController < ApplicationController
 	end
 
 	def create
-		Category.create(params.require(:category).permit(:title, :description, :link))
+		category = Category.create(params.require(:category).permit(:title, :description, :link))
+		category.user = current_user if user_signed_in?
+		category.save
 		redirect_to categories_path
 	end
+
+	def edit
+		@category = Category.find(params[:id])
+
+	end
+
+	def update
+		category = Category.create(params.require(:category).permit(:title, :description, :link))
+		category.user = current_user if user_signed_in?
+		category.save
+		redirect_to category_path(category)
+	end
+
 end

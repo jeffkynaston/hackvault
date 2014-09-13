@@ -25,4 +25,17 @@ class ResourcesController < ApplicationController
 		resource.save
 		redirect_to resources_path
 	end
+
+	def edit
+		@resource = Resource.find(params[:id])
+
+	end
+
+	def update
+		# resource = Resource.find(params[:id])
+		resource = Resource.update(params[:id], params.require(:resource).permit(:title, :description, :link, issue_ids: [], category_ids: []))
+		resource.user = current_user if user_signed_in?
+		resource.save
+		redirect_to resources_path(resource)
+	end
 end

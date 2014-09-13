@@ -20,5 +20,8 @@
 	<p><%= link_to(@resource.link, @resource.link) %></p>
 	<br/>
 	<p><div class="bold">user:</div> <%= @resource.user_name %> | <div class="bold">created on:</div> <%= @resource.created_at.to_formatted_s(:long) %></p>
+	<% if @resource.user == current_user %>
+		<p><%= link_to("edit", edit_resource_path(@resource))	 %></p>
+	<% end %>
 </div>
 
