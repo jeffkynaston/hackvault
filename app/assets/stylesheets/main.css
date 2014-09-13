@@ -155,3 +155,8 @@ option {
 	padding-top: 2em;
 	overflow: auto;
 }
+
+.fontawesome {
+	font-family: 'FontAwesome';
+	font-weight: thin;
+}

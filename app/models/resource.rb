@@ -22,4 +22,10 @@ class Resource < ActiveRecord::Base
 		end
 	end
 	
+	def self.search(query)
+    results = where("lower(title) like ?", "%#{query.downcase}%")
+    p results
+    return results
+  end
+
 end

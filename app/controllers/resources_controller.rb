@@ -1,7 +1,11 @@
 class ResourcesController < ApplicationController
 
 	def index
-		@resources = Resource.all
+		if params[:search]
+      @resources = Resource.search(params[:search]).order("created_at DESC")
+    else
+      @resources = Resource.all
+    end
 		@current_uri = request.env['PATH_INFO']
 	end
 
@@ -32,7 +36,6 @@ class ResourcesController < ApplicationController
 	end
 
 	def update
-		# resource = Resource.find(params[:id])
 		resource = Resource.update(params[:id], params.require(:resource).permit(:title, :description, :link, issue_ids: [], category_ids: []))
 		resource.user = current_user if user_signed_in?
 		resource.save

@@ -23,10 +23,13 @@
 	height: 40px;
 }
 
-#home-search button[type="submit"] {
-	height: 40px;
+#home-search input[type="submit"] {
+	height: 42px;
+	padding: 2px 0px;
+	width: 42px;
 	border-radius: 0;
-	background-color: rgba(18, 19, 25, 0.95) !important;
+	background-color: rgba(18, 19, 25, 0.8) !important;
+	margin-left: -2px;
 }
 
 .main-link {
