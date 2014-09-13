@@ -43,12 +43,16 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 <% if current_uri == root_path %>
+<div class="home-overlay">
 <div class="home-container"> 
   <%= yield %>
 </div>
+</div>
 <% else %>
+<div class="site-overlay">
   <div class="container"> 
 	 <%= yield %>
+  </div>
 </div>
 <% end %>
 <% else %>

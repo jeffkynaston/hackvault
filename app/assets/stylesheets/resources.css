@@ -12,10 +12,8 @@ h1 {
 }
 
 .thumb {
-	/*width: 29.3%;*/
 	padding: 0% 5% 0% 5%;
 	margin: 0% 3% 5% 3%;
-	/*float: left;*/
 	background: rgba(244,241,227,.9);
 	overflow: hidden;
 }
