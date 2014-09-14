@@ -25,7 +25,6 @@ html, button, input, select, textarea,
 a {
 	text-decoration: none;
 	color: #F4F1E3;
-	/*color: black;*/
 }
 
 h1, h2 {
@@ -132,16 +131,11 @@ option {
 	background-color: rgba(18, 19, 25, 0.90) !important;		
 }
 
-/*.site-container {
-	background-color: rgba(18, 19, 25, 0.60) !important;	
-}*/
-
 .container,
 .home-container {
 	margin: auto;
 	width: 1200px;
 	max-width: 90%;
-	height: 600px;
 	color: #F4F1E3;
 	padding-top: 2em;
 	overflow: auto;

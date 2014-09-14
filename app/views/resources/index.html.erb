@@ -1,20 +1,17 @@
 <h1>Resources</h1>
-<div class="pure-g">
-    
-	 
-	<% @resources.each_with_index do |resource, index| %>
-		<div class="pure-u-1-3">
-		<a href="/resources/<%= resource.id %>">
-			<div class="thumb">
-				<div class="resource-info">
-				<h2><%= resource.title %></h2>
-				<p>
-					<div class="bold"> posted by:</div> <%= resource.user_name %>
-					<div class="date"><%= resource.created_at.time.to_formatted_s(:long) %></div>
-				</p>
-				</div>
-			</div>
-		</a>
-		</div>
-	<% end %>
+
+<div id="resource-options">
+<div id="resource-options-left">
+	<div id="resource-a-z" class="resource-filter-active">A-Z</div> | 
+	<div id="resource-z-a">Z-A</div>
+</div>
+
+<div id="resource-options-right">
+	<div id="resource-newest">newest</div> | 
+	<div id="resource-oldest">oldest</div>
+</div>
+</div>
+
+<div id="resource-list">
+	<%= render partial: 'resource_list', locals: { resources: @resources} %>
 </div>

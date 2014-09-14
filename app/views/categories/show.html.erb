@@ -5,6 +5,8 @@
 		<p><%= link_to("edit", edit_category_path(@category))	 %></p>
 	<% end %>
 </div>
+
+<div id="category-list">
 <div class="category-issue-list">
 	<h2>Issues</h2>
 	<% @category.issues.each do |issue| %>
@@ -20,7 +22,7 @@
 	<% end %>
 </div>
 
-<div class="category-issue-list">
+<div class="category-resource-list">
 	<h2>Resources</h2>
 	<% @category.resources.each do |resource| %>
 		<%= link_to(resource_path(resource)) do %>
@@ -33,4 +35,5 @@
 			</div>
 		<% end %>
 	<% end %>
+</div>
 </div>

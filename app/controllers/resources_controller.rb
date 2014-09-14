@@ -2,9 +2,9 @@ class ResourcesController < ApplicationController
 
 	def index
 		if params[:search]
-      @resources = Resource.search(params[:search]).order("created_at DESC")
+      @resources = Resource.search(params[:search]).order("lower(title)")
     else
-      @resources = Resource.all
+      @resources = Resource.all.order("lower(title)")
     end
 		@current_uri = request.env['PATH_INFO']
 	end

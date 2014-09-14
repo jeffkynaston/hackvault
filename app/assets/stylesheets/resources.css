@@ -1,28 +1,66 @@
-// Place all the styles related to the Resources controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-h1 {
-	text-align: center;
-}
 
 .date {
-	display: block;
+	display: inline;
 	font-size: .9em;
 }
 
-.thumb {
-	padding: 0% 5% 0% 5%;
-	margin: 0% 3% 5% 3%;
-	background: rgba(244,241,227,.9);
-	overflow: hidden;
+#resource-options {
+	display: block;
+	overflow: auto;
+	width: 800px;
+	margin: auto;
+	max-width: 100%;
 }
 
-.thumb:hover {
-	background: rgba(18, 19, 25, 0.80);
-	color: #F4F1E3;
+#resource-options-left {
+	float: left;
+	clear: left;
 }
-.thumb a {
+
+#resource-options-right {
+	float: right;
+	clear: right;
+}
+
+#resource-a-z,
+#resource-z-a,
+#resource-oldest,
+#resource-newest {
+	display: inline;
+}
+
+#resource-list {
+	height: 500px;
+	overflow: auto;
+	width: 800px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.resource-thumb {
+	max-width: 100%;
+	padding: 0%;
+	margin: 1em auto;
+	background: rgba(244,241,227,1);
+	overflow: hidden;
+	color: #000;
+}
+
+.resource-info:hover,
+.resource-thumb:hover {
+	background-color: #18657E;
+}
+
+.resource-filter-active {
+	color: #26AEDA;
+	font-size: 1.5em;
+}
+
+.resource-info {
+	padding: 0% 3%;
+}
+
+.resource-thumb a {
 	text-decoration: none;
 }
 
@@ -30,7 +68,7 @@ h1 {
 .resource-body {
 	width: 800px;
 	max-width: 100%;
-	margin: 0 10%;
+	margin: auto;
 }
 
 .resource-nav {
@@ -80,10 +118,4 @@ h1 {
 	content:"\A"; white-space:pre; 
 }
 
-.resource-info {
-	color: black;
-}
 
-.resource-info:hover {
-	color: #F4F1E3;
-}

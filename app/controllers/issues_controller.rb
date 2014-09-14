@@ -2,6 +2,7 @@ class IssuesController < ApplicationController
 
 	def index
 		@issues = Issue.all
+		@featured_issue = Issue.last
 		@current_uri = request.env['PATH_INFO']
 	end
 

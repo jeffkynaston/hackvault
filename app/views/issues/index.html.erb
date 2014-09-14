@@ -1,21 +1,33 @@
-
 <h1>Issues</h1>
-<div class="pure-g">
-    
-	 
-	<% @issues.each_with_index do |issue, index| %>
-		<div class="pure-u-1-3">
-		<a href="/issues/<%= issue.id %>">
-			<div class="thumb">
-			<div class="issue-info">
-				<h2><%= issue.title %></h2>
+<div id="issue-featured-label">Featured Issue:</div>
+<a href="/issues/<%= @featured_issue.id %>">
+<div id="issue-featured">
+		<div class="issue-info">
+			<h2><%= @featured_issue.title %></h2>
+			<div id="issue-featured-description">
+				<p><%= truncate(markdown(@featured_issue.description), limit: 100) %></p>
+			</div>
 				<p>
-					<div class="bold"> posted by:</div> <%= issue.user_name %>
-					<div class="date"><%= issue.created_at.time.to_formatted_s(:long) %></div>
+					<div class="bold"> posted by:</div> <%= @featured_issue.user_name %>
+					<div class="date"><%= @featured_issue.created_at.time.to_formatted_s(:long) %></div>
 				</p>
-			</div>
-			</div>
-		</a>
 		</div>
-	<% end %>
+</div>
+</a>
+
+
+<div id="issue-options">
+<div id="issue-options-left">
+	<div id="issue-a-z" class="issue-filter-active">A-Z</div> | 
+	<div id="issue-z-a">Z-A</div>
+</div>
+
+<div id="issue-options-right">
+	<div id="issue-newest">newest</div> | 
+	<div id="issue-oldest">oldest</div>
+</div>
+</div>
+
+<div id="issue-list">	 
+	<%= render partial: 'issue_list', locals: { issues: @issues} %>
 </div>
