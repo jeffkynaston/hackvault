@@ -1,36 +1,4 @@
 <h1>Edit Resource</h1>
 <div class="center-form">
-	<%= form_for @resource, html: {class: "pure-form-stacked"} do |f| %>
-	  <%= f.label :title %>
-	  <%= f.text_field :title %>
-
-	  <%= f.label :description %>
-	  <%= f.text_area :description %>
-
-		<%= f.label :link %>
-	  <%= f.url_field :link %>
-	
-	  <div class="check-multiple">
-			<%= f.label "categories" %>
-		  <div class="check-multiple-options">
-			  <%= f.collection_check_boxes :category_ids,
-		                             Category.all,
-		                             :id,
-		                             :title %>
-	    </div>
-    </div>
-
-	  <div class="check-multiple">
-			<%= f.label "issues" %>
-			<div class="check-multiple-options">
-	  		<%= f.collection_check_boxes :issue_ids,
-                             Issue.all,
-                             :id,
-                             :title %>
-       </div>
-    </div>
-    
-
-	  <%= f.submit "Edit Resource", :class => 'pure-button pure-button-primary' %>
-	<% end %>
+	<%= render 'form' %>
 </div>

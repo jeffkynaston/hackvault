@@ -16,7 +16,9 @@
 	</div>
 
 <div class="issue-resource-list">
-	<h2>Resources</h2>
+	<h2>Answers</h2>
+	<%= link_to 'New Answer', new_resource_path, remote: true %>
+	<div id="task-form" style="display:none;"></div>
 	<% @issue.resources.each do |resource| %>
 		<%= link_to(resource_path(resource)) do %>
 			<div class="issue-resource">
