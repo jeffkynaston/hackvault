@@ -15,11 +15,11 @@
 		<% end %>
 	</div>
 
-<div class="issue-resource-list">
 	<h2>Answers</h2>
-	<%= link_to 'New Answer', new_resource_path, remote: true %>
-	<div id="task-form" style="display:none;"></div>
-	<% @issue.resources.each do |resource| %>
+<div id="issue-resource-list">
+	<%= link_to 'New Answer', new_resource_path(:issue_info => { :issue_id => @issue.id }), remote: true %>
+	<div id="resource-form" style="display:none;"></div>
+	<% @issue.resources.reverse.each do |resource| %>
 		<%= link_to(resource_path(resource)) do %>
 			<div class="issue-resource">
 				<h3><%= resource.title %></h3>

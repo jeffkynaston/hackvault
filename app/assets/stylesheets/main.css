@@ -112,6 +112,13 @@ option {
 	display: block;
 }*/
 
+.issue-ajax-form {
+	width: 700px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.issue-ajax-form textarea,
 .center-form textarea {
 	min-height: 100px;
 	padding: 10px 10px;

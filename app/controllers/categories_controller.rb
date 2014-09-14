@@ -6,6 +6,18 @@ class CategoriesController < ApplicationController
     else
       @categories = Category.all.order("lower(title)")
     end
+    if params["sort_info"]
+			case params["sort_info"]["sort_direction"]
+			when "z-a"
+			  @categories = Category.all.order("lower(title)").reverse
+			when "newest"
+			  @categories = Category.all.order("CREATED_AT").reverse
+			when "oldest"
+			  @categories = Category.all.order("CREATED_AT")
+			else
+			  @categories = Category.all.order("lower(title)")
+			end
+		end
 		@current_uri = request.env['PATH_INFO']
 	end
 

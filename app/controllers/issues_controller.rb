@@ -1,8 +1,22 @@
 class IssuesController < ApplicationController
+	respond_to :html, :js
 
 	def index
 		@issues = Issue.all.order("lower(title)")
 		@featured_issue = Issue.last
+		p  params
+		if params["sort_info"]
+			case params["sort_info"]["sort_direction"]
+			when "z-a"
+			  @issues = Issue.all.order("lower(title)").reverse
+			when "newest"
+			  @issues = Issue.all.order("CREATED_AT").reverse
+			when "oldest"
+			  @issues = Issue.all.order("CREATED_AT")
+			else
+			  @issues = Issue.all.order("lower(title)")
+			end
+		end
 		@current_uri = request.env['PATH_INFO']
 	end
 
@@ -12,6 +26,7 @@ class IssuesController < ApplicationController
 
 	def show
 		@issue = Issue.find(params[:id])
+
 		@issue.title = "Issue Title" if @issue.title == ""
 	end
 

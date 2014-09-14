@@ -3,13 +3,14 @@
 
 <div id="category-options">
 <div id="category-options-left">
-	<div id="category-a-z" class="category-filter-active">A-Z</div> | 
-	<div id="category-z-a">Z-A</div>
+<div id="category-a-z" class="category-filter-active">
+	<%= link_to 'A-Z', categories_path(:sort_info => { :sort_direction => "a-z" }) %></div> | 
+	<div id="category-z-a"><%= link_to 'Z-A', categories_path(:sort_info => { :sort_direction => "z-a" }) %></div>
 </div>
 
 <div id="category-options-right">
-	<div id="category-newest">newest</div> | 
-	<div id="category-oldest">oldest</div>
+	<div id="category-newest"><%= link_to 'newest', categories_path(:sort_info => { :sort_direction => "newest" }) %></div> | 
+	<div id="category-oldest"><%= link_to 'oldest', categories_path(:sort_info => { :sort_direction => "oldest" }) %></div>
 </div>
 </div>
 

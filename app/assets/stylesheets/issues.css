@@ -48,7 +48,7 @@
 	display: inline;
 }
 
-.issue-filter-active {
+.issue-filter-active a{
 	color: #26AEDA;
 	font-size: 1.5em;
 }
@@ -118,7 +118,7 @@
 	font-size: 1em;
 }
 
-.issue-resource-list {
+#issue-resource-list {
 	width: 800px;
 	margin: 1% auto;
 	max-width: 100%;
@@ -126,7 +126,7 @@
 	overflow: auto;
 }
 
-.issue-resource-list h2 {
+#issue-resource-list h2 {
  text-align: center;
 }
 

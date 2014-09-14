@@ -1,0 +1,16 @@
+<div class="issue-ajax-form">
+<%= form_for @resource, html: {class: "pure-form-stacked"} do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+
+	<%= f.label :link %>
+  <%= f.url_field :link %>
+
+  <%= f.submit "Create Resource", :class => 'pure-button pure-button-primary' %>
+  <%= hidden_field(:resource, :issue_answer, :value => true) %>
+  <%= hidden_field(:resource, :issue_id, :value => @current_issue) %>
+<% end %>
+</div>
