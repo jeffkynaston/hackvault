@@ -2,9 +2,9 @@ class CategoriesController < ApplicationController
 
 	def index
     if params[:search]
-      @categories = Category.search(params[:search]).order("created_at DESC")
+      @categories = Category.search(params[:search]).order("lower(title)")
     else
-      @categories = Category.all
+      @categories = Category.all.order("lower(title)")
     end
 		@current_uri = request.env['PATH_INFO']
 	end

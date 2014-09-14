@@ -5,7 +5,7 @@
 		<div class="issue-info">
 			<h2><%= @featured_issue.title %></h2>
 			<div id="issue-featured-description">
-				<p><%= truncate(markdown(@featured_issue.description), limit: 100) %></p>
+				<%= truncate(markdown(@featured_issue.description), limit: 100) %>
 			</div>
 				<p>
 					<div class="bold"> posted by:</div> <%= @featured_issue.user_name %>

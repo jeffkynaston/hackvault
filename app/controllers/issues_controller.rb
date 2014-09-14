@@ -1,7 +1,7 @@
 class IssuesController < ApplicationController
 
 	def index
-		@issues = Issue.all
+		@issues = Issue.all.order("lower(title)")
 		@featured_issue = Issue.last
 		@current_uri = request.env['PATH_INFO']
 	end
