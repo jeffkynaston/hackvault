@@ -14,5 +14,10 @@
 </div>
 
 <div id="resource-list">
-	<%= render partial: 'resource_list', locals: { resources: @resources} %>
+	<% if @resources.length>0 %>
+		<%= render partial: 'resource_list', locals: { resources: @resources} %>
+	<% else %>
+		<br/>
+		no results found
+	<% end %>
 </div>
