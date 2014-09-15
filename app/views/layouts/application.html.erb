@@ -36,24 +36,30 @@
 </div>
 </div>
 
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
 <% if current_uri == root_path %>
-<div class="home-overlay">
-<div class="home-container"> 
-  <%= yield %>
-</div>
-</div>
-<% else %>
-<div class="site-overlay">
-  <div class="container"> 
-	 <%= yield %>
+  <div class="home-overlay">
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    <div class="home-container"> 
+    <%= yield %>
+    </div>
   </div>
-</div>
+<% else %>
+  <div class="site-overlay">
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    <div class="container"> 
+  	 <%= yield %>
+    </div>
+  </div>
 <% end %>
 <% else %>
 
