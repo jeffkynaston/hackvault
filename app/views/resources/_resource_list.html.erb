@@ -2,11 +2,11 @@
 		<a href="/resources/<%= resource.id %>">
 			<div class="resource-thumb">
 				<div class="resource-info">
-				<h3><%= resource.title %></h3>
-				<p>
-					<div class="bold"> posted by:</div> <%= resource.user_name %> | 
-					<div class="date"><%= resource.created_at.time.to_formatted_s(:long) %></div>
-				</p>
+					<h3><%= resource.title %></h3>
+					<div class="resource-info-credits">
+						<div class="bold">posted by:</div> <%= resource.user_name %> | 
+						<div class="date"><%= resource.created_at.time.to_formatted_s(:long) %></div>
+					</div>
 				</div>
 			</div>
 		</a>
