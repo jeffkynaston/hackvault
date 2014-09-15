@@ -14,7 +14,7 @@
 			<div class="category-issue">
 				<h3><%= issue.title %></h3>
 				<p>
-					<div class="bold"> posted by:</div> <%= issue.user_name %>
+					<div class="bold"> posted by:</div> <%= issue.user_name %><br/>
 					<div class="date"><%= issue.created_at.time.to_formatted_s(:long) %></div>
 				</p>
 			</div>
@@ -29,7 +29,7 @@
 			<div class="category-resource">
 				<h3><%= resource.title %></h3>
 				<p>
-					<div class="bold"> posted by:</div> <%= resource.user_name %>
+					<div class="bold"> posted by:</div> <%= resource.user_name %><br/>
 					<div class="date"><%= resource.created_at.time.to_formatted_s(:long) %></div>
 				</p>
 			</div>

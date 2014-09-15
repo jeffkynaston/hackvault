@@ -49,6 +49,7 @@
 
 .category-thumb:hover {
 	background-color: #18657E;
+	color: #F4F1E3;
 }
 .category-thumb a {
 	text-decoration: none;
@@ -94,6 +95,7 @@
 	color: black;
 }
 
+.category-thumb:hover,
 .category-info:hover {
 	color: #F4F1E3;
 }
@@ -104,4 +106,17 @@
 
 .category-info p {
 	margin: .5em auto 1em auto;
+}
+
+.category-resource h3,
+.category-issue h3 {
+	margin: 0;
+	margin-top: .25em;
+}
+
+.category-resource p,
+.category-issue p {
+	margin: 0;
+	margin-bottom: .5em;
+	margin-top: .5em;
 }

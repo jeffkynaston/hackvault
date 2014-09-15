@@ -49,6 +49,7 @@
 .resource-info:hover,
 .resource-thumb:hover {
 	background-color: #18657E;
+	color: #F4F1E3;
 }
 
 .resource-filter-active a{

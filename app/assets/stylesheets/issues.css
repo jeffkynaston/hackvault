@@ -173,9 +173,10 @@
 	padding: 0% 3%;
 }
 
-.resource-info:hover,
-.resource-thumb:hover {
+.issue-info:hover,
+.issue-thumb:hover {
 	background-color: #18657E;
+	color: #F4F1E3;
 }
 
 .issue-info h3 {
