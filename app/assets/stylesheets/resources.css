@@ -51,7 +51,7 @@
 	background-color: #18657E;
 }
 
-.resource-filter-active {
+.resource-filter-active a{
 	color: #26AEDA;
 	font-size: 1.5em;
 }

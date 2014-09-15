@@ -18,14 +18,14 @@
 
 <div id="issue-options">
 <div id="issue-options-left">
-	<div id="issue-a-z" class="issue-filter-active">
+	<div id="issue-a-z" class="<%= current_filter?('a-z') %>">
 	<%= link_to 'A-Z', issues_path(:sort_info => { :sort_direction => "a-z" }) %></div> | 
-	<div id="issue-z-a"><%= link_to 'Z-A', issues_path(:sort_info => { :sort_direction => "z-a" }) %></div>
+	<div id="issue-z-a" class="<%= current_filter?('z-a') %>"><%= link_to 'Z-A', issues_path(:sort_info => { :sort_direction => "z-a" }) %></div>
 </div>
 
 <div id="issue-options-right">
-	<div id="issue-newest"><%= link_to 'newest', issues_path(:sort_info => { :sort_direction => "newest" }) %></div> | 
-	<div id="issue-oldest"><%= link_to 'oldest', issues_path(:sort_info => { :sort_direction => "oldest" }) %></div>
+	<div id="issue-newest" class="<%= current_filter?('newest') %>"><%= link_to 'newest', issues_path(:sort_info => { :sort_direction => "newest" }) %></div> | 
+	<div id="issue-oldest" class="<%= current_filter?('oldest') %>"><%= link_to 'oldest', issues_path(:sort_info => { :sort_direction => "oldest" }) %></div>
 </div>
 </div>
 

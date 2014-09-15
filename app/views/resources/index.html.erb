@@ -2,14 +2,14 @@
 
 <div id="resource-options">
 <div id="resource-options-left">
-	<div id="resource-a-z" class="resource-filter-active">
+	<div id="resource-a-z" class="<%= current_filter?('a-z') %>">
 	<%= link_to 'A-Z', resources_path(:sort_info => { :sort_direction => "a-z" }) %></div> | 
-	<div id="resource-z-a"><%= link_to 'Z-A', resources_path(:sort_info => { :sort_direction => "z-a" }) %></div>
+	<div id="resource-z-a" class="<%= current_filter?('z-a') %>"><%= link_to 'Z-A', resources_path(:sort_info => { :sort_direction => "z-a" }) %></div>
 </div>
 
 <div id="resource-options-right">
-	<div id="resource-newest"><%= link_to 'newest', resources_path(:sort_info => { :sort_direction => "newest" }) %></div> | 
-	<div id="resource-oldest"><%= link_to 'oldest', resources_path(:sort_info => { :sort_direction => "oldest" }) %></div>
+	<div id="resource-newest" class="<%= current_filter?('newest') %>"><%= link_to 'newest', resources_path(:sort_info => { :sort_direction => "newest" }) %></div> | 
+	<div id="resource-oldest" class="<%= current_filter?('oldest') %>"><%= link_to 'oldest', resources_path(:sort_info => { :sort_direction => "oldest" }) %></div>
 </div>
 </div>
 

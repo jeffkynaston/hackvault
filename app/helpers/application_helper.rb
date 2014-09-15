@@ -25,6 +25,16 @@ module ApplicationHelper
 	  ''
 	end
 
+	def current_filter?(filter)
+		if params["sort_info"] == nil 
+			return 'filter-active' if filter == 'a-z'
+		end
+		if params["sort_info"]
+	  	return 'filter-active' if filter == params["sort_info"]["sort_direction"]
+	  end
+	  ''
+	end
+
 	def markdown(text)
     renderer = Redcarpet::Render::HTML.new(hard_wrap: true, filter_html: true)
     options = {
