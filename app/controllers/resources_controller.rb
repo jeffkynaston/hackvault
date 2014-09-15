@@ -27,7 +27,7 @@ class ResourcesController < ApplicationController
 		@issues = Issue.all.map { |issue| issue.title }
 		@categories = Category.all
 		@resource = Resource.new
-		if params["issue_info"]["issue_id"]
+		if params["issue_info"]
 			@current_issue = params["issue_info"]["issue_id"]
 		end
 	end
