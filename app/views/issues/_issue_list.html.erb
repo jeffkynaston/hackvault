@@ -2,11 +2,11 @@
 	<a href="/issues/<%= issue.id %>">
 		<div class="issue-thumb">
 		<div class="issue-info">
-			<h2><%= issue.title %></h2>
-			<p>
+			<h3><%= issue.title %></h3>
+			<div class="issue-info-credits">
 				<div class="bold"> posted by:</div> <%= issue.user_name %>
 				<div class="date"><%= issue.created_at.time.to_formatted_s(:long) %></div>
-			</p>
+			</div>
 		</div>
 		</div>
 	</a>

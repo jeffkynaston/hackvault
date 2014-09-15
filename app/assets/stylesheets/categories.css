@@ -97,3 +97,11 @@
 .category-info:hover {
 	color: #F4F1E3;
 }
+
+.category-info h2 {
+	margin-bottom: 0em;
+}
+
+.category-info p {
+	margin: .5em auto 1em auto;
+}
