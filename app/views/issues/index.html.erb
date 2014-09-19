@@ -2,7 +2,7 @@
 <div id="issue-featured-label">Featured Issue:</div>
 <a href="/issues/<%= @featured_issue.id %>">
 <div id="issue-featured">
-		<div class="issue-info">
+		<div class="issue-info-featured">
 			<h2><%= @featured_issue.title %></h2>
 			<div id="issue-featured-description">
 				<p><%= markdown(truncate(@featured_issue.description, length: 300)) %></p>

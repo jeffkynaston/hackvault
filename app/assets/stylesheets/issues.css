@@ -168,6 +168,7 @@
 	content:"\A"; white-space:pre; 
 }
 
+.issue-info-featured,
 .issue-info {
 	color: black;
 	padding: 0% 3%;
