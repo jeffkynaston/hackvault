@@ -168,7 +168,12 @@
 	content:"\A"; white-space:pre; 
 }
 
-.issue-info-featured,
+.issue-info-featured {
+	width: 750px;
+	max-width: 94%;
+	margin: auto;
+}
+
 .issue-info {
 	color: black;
 	padding: 0% 3%;
